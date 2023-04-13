@@ -1,0 +1,123 @@
+python main2.py -p "thunder sky"  -i "./wave_frame" --mask "./wave_mask" --output_path "./out_a_wave" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --model_output_size 512 --frame_num 4
+
+
+
+python main2.py -p "beautiful water wave"  -i road_image4/ --mask water_mask_5frame --output_path "out_a_test/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512
+
+
+
+
+smile
+CUDA_VISIBLE_DEVICES=1 python main2.py -p "beautiful lady laughing out loud"  -i ./test_input/face_video_3  --mask ./test_input/face_video_3_mask/ --output_path "out_a_a_face_video_4_out" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3 --frame_num 3
+CUDA_VISIBLE_DEVICES=1 python main2.py -p "beautiful lady laughing out loud"  -i ./test_input/face_video_4  --mask ./test_input/face_video_4_mask/ --output_path "out_a_a_face_video_4_out" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3 --frame_num 3
+
+
+
+
+05:51
+all_frames
+black raining sky
+500,100,x,1000,5,75,3
+CUDA_VISIBLE_DEVICES=2 python main2.py -p "black raining sky"  -i ./test_input/drive_50frames/ --mask ./test_input/drive_mask_50frames/ --output_path "out_a_a_drive/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3
+
+5frames
+CUDA_VISIBLE_DEVICES=0 python main2.py -p "black raining sky"  -i ./test_input/drive_50frames/ --mask ./test_input/drive_mask_50frames/ --output_path "out_a_a_drive/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3 --frame_num 5
+
+
+
+13:17
+all_frames
+fire ball
+1000,1000,x,1000,25,100
+CUDA_VISIBLE_DEVICES=0 python main2.py -p "fire ball"  -i ./test_input/kid-football_redball_pasted_all_resized/ --mask ./test_input/kid-football_ball_mask_all/ --output_path "out_a_a_kid/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3
+
+CUDA_VISIBLE_DEVICES=0 python main2.py -p "fire ball with flame"  -i ./test_input/kid-football_redball_pasted_all_resized/ --mask ./test_input/kid-football_ball_mask_all/ --output_path "out_a_a_kid_fireball/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 5
+
+
+
+thunder sky
+1000,1000,x,1000,5,75,3
+CUDA_VISIBLE_DEVICES=2 python main2.py -p "thunder sky"  -i ./test_input/drive --mask ./test_input/drive_mask --output_path "out_a_a_drive/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3
+
+
+explosion sky
+
+CUDA_VISIBLE_DEVICES=2 python main2.py -p "explosion sky"  -i ./test_input/drive --mask ./test_input/drive_mask --output_path "out_a_a_drive_explosion/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3
+
+
+
+
+
+
+
+man_face
+CUDA_VISIBLE_DEVICES=0 python main2.py -p "handsome man laughing out loud"  -i ./test_input/man_face_cropped  --mask ./test_input/man_face_mask --output_path "out_a_a_man_face" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3 --frame_num 4
+man_face_2
+CUDA_VISIBLE_DEVICES=0 python main2.py -p "handsome man laughing out loud"  -i ./test_input/man_face_cropped2  --mask ./test_input/man_face_mask2 --output_path "out_a_a_man_face" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 99 --frame_num 4
+
+
+
+이거 돌리고 집갔음
+CUDA_VISIBLE_DEVICES=2 python main3.py -p "beautiful lady laughing out loud"  -i ./test_input/woman_face_2_cropped  --mask ./test_input/woman_face_2_mask/ --output_path "out_a_a_woman_face_2_seed" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 100
+
+
+
+CUDA_VISIBLE_DEVICES=2 python main4.py -p "pink sky"  -i ./test_input/drive --mask ./test_input/drive_mask --output_path "out_a_a_drive_explosion/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 3
+
+
+CUDA_VISIBLE_DEVICES=1 python main4.py -p "pink sky"  -i ./test_input/drive_50frames --mask ./test_input/drive_mask_50frames --output_path "out_a_a_drive_seed" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --invert_mask --seed 100 --skip_timesteps 5 --timestep_respacing 100 --frame_num 30
+
+
+
+
+
+
+
+###
+thunder
+CUDA_VISIBLE_DEVICES=0 python main2.py -p "thunder sky"  -i ./test_input/waves_256_final --mask ./test_input/waves_256_final_mask/ --output_path "out_1_thunder/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 256 --seed 100 --invert_mask --skip_timesteps 0 --timestep_respacing 75
+explosion
+CUDA_VISIBLE_DEVICES=1 python main2.py -p "explosion"  -i ./test_input/explosion_dataset/explosion_image/ --mask ./test_input/explosion_dataset/explosion_mask/ --output_path "out_2_explosion/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 256 --seed 101 --skip_timesteps 0 --timestep_respacing 75
+archery
+CUDA_VISIBLE_DEVICES=0 python main2.py -p "a photo of fire, flame"  -i ./test_input/archery_dataset/archery --mask ./test_input/archery_dataset/archery_mask/ --output_path "out_3_archery/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 256 --seed 101 --skip_timesteps 0 --timestep_respacing 75
+sword
+CUDA_VISIBLE_DEVICES=3 python main2.py -p "a photo of fire, flame"  -i ./test_input/sword_dataset/sword_image/ --mask ./test_input/sword_dataset/sword_mask/ --output_path "out_4_fire/" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 256 --seed 101 --skip_timesteps 0 --timestep_respacing 75
+waves
+
+
+
+
+waves 개인적으로 해볼것
+CUDA_VISIBLE_DEVICES=3 python main2.py -p "thunder sky, lightning cloud"  -i ./test_input/waves_final_original --mask ./test_input/waves_final_original_mask --output_path "out_a_a_waves_final_original" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --invert_mask --seed 100 --skip_timesteps 0 --timestep_respacing 75 --frame_num 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 해보려다가 랜덤 주석 처리 해서 못 함
+CUDA_VISIBLE_DEVICES=0 python main4.py -p "fire, flame"  -i ./test_input/drive_50frames --mask ./test_input/drive_mask_50frames --output_path "out_a_a_drive_fire_seed" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 100 --skip_timesteps 5 --timestep_respacing 100 --frame_num 30
+CUDA_VISIBLE_DEVICES=3 python main4.py -p "thunder sky, lightning cloud"  -i ./test_input/waves_final_original --mask ./test_input/waves_final_original_mask --output_path "out_a_a_waves_final_original_seed" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --invert_mask --seed 100 --skip_timesteps 5 --timestep_respacing 100 --frame_num 30
+CUDA_VISIBLE_DEVICES=2 python main4.py -p "fire, flame"  -i ./test_input/kid-football_original_resized/ --mask ./test_input/kid-football_ball_mask_all/ --output_path "out_a_a_fireball_seed" --mask_preservation_loss --background_preservation_loss --optical_flow_loss --ddim --model_output_size 512 --seed 100 --skip_timesteps 5 --timestep_respacing 100
